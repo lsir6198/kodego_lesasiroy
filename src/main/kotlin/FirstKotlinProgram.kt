@@ -6,5 +6,5 @@ fun main(){
        Filename: FirstKotlinProgram.kt
      */
     println("Lesa Siroy!")
-
+    print("MD1P")
 }
