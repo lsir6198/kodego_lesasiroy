@@ -13,13 +13,14 @@ fun main(){
     println(string1.uppercase())
     println(string2.lowercase())
     //startswith
-    println(string2.startsWith( prefix = "this"))
+    println(string2.startsWith("this"))
     //endsswith
-    println(string2.endsWith(suffix = "too!"))
+    println(string2.endsWith("too!"))
     //concatenate
     println(string1+string2)
     //substring
     println(string1.substring(6,10))
     //replace
+    println(string1.replace( "this", "that"))
 
 }
