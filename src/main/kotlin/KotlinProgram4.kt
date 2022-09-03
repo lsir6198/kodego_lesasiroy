@@ -1,12 +1,12 @@
 fun main(){
-    var number : Int = 10
+    var number : Int = 9
 
     if(number <10 ) {
         println("Hello")
+        println("Line ends")
     }
 
-    println("Line ends")
-    var grade : Int = 70
+    var grade : Int = 80
     if(grade >=75 ){
         println("you passed!")
     }
