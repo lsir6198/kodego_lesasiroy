@@ -6,4 +6,5 @@ fun main(){
       println("Hello Earth!")
       ctr++ //update
     }while(ctr <=5) //condition
+
 }
