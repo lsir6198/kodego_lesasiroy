@@ -12,23 +12,17 @@ fun main(){
     var meat = "pork, beef, chicken, lamb"
     var spices = "black pepper, salt, garlic powder, onion powder and paprika. Basil, oregano, rosemary and thyme, cocoa powder, cinnamon, cloves, ginger and nutmeg, lemon juice, vinegar, cooking oil and vanilla"
 
-    println("Welcome to MKsons Grocery Store Online")
+
     println("Below are the list of available items")
     println("List of Items:")
     println("$items")
-    println("")
-    println("Produce Items available stocks:")
-    println("$produceitems")
-    println("")
-    println("Pantry and Dairy Items available stocks:")
-    println("$pantrydairyitems")
-    println("")
-    println("Meats:")
-    println("$meat")
-    println("")
-    println("Spices available stocks")
-    println("$spices")
-    println("")
-    print("For more querries and information about our products, Please call our hotline number: 06-543-2233")
-    print(" Thank you for visiting MKSons Grocery Store Online")
+    println()
+    var itemsNumber : Int = 3
+    when(itemsNumber){
+        1 -> println("Produce Items available stocks: $produceitems")
+        2 -> println("Pantry and Dairy Items available stocks: $pantrydairyitems")
+        3 -> println("$meat")
+        4 -> println("Spices available stocks: $spices")
+    }
+
 }
