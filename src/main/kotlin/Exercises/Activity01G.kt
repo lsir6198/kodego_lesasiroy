@@ -16,5 +16,5 @@ fun main(){
         println("$number2 is the bigger value and $number1 is the lower value")
 
     }
-
+    print("End of code")
 }
