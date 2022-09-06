@@ -1,3 +1,4 @@
+package Exercises
 fun main (){
 
 //Create an application that will accept 2 string inputs.
