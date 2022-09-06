@@ -1,3 +1,4 @@
+package Exercises
 fun main(){
     //Create an application that will accept 2 Integers.
    // It will identify the lower value and bigger value of the two inputs.
