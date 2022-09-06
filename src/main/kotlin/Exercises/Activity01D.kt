@@ -1,3 +1,4 @@
+package Exercises
 fun main(){
     var answer : Boolean = true
     var ctr = 1
