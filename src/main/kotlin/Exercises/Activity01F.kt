@@ -10,7 +10,7 @@ fun main(){
     println(string1.length)
     print("Second word is")
     println(string1.reversed())
-    print("String1 is Palindrome")
-
+    println("String1 is Palindrome")
+    print("End of Line")
 
 }
