@@ -1,5 +1,5 @@
 fun main(){
-    var answer : Boolean = false
+    var answer : Boolean = true
     var ctr = 1
 
     print("Enter Amount:")
@@ -15,17 +15,11 @@ fun main(){
         if (ctr > 5) break
     }
 
-        print("Divide the value by how many?")
-        var input1: Int = readln().toInt()
-        var quotient = amount / ctr
-        print("Divided value is $quotient")
+    print("Divide the value by how many?")
+    var input1: Int = readln().toInt()
+    var quotient = amount / ctr
+    print("Divided value is $quotient")
 
 
 }
-
-
-
-
-
-
 
