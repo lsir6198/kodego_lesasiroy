@@ -11,4 +11,13 @@ fun main(){
 
     //array size
     println(numbers.size)
+    println("@@@@@@@")
+    println(names[0])
+    println(names[1])
+    println(names[2])
+    names[1] = "Matthew" //or names.set(1, "Matthew")
+    println(names[0]) //or can be code as println(names.get(0))
+    println(names[1])
+    println(names[2])
+
 }
