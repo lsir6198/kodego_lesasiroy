@@ -17,14 +17,18 @@ fun main() {
     println("List of Items:")
     println("$items")
     println()
-    var itemsNumber: Int = 4
+    var itemsNumber: Int = 2
     when (itemsNumber) {
         1 -> println("Produce Items available stocks: $produceitems")
         2 -> println("Pantry and Dairy Items available stocks: $pantrydairyitems")
         3 -> println("$meat")
         4 -> println("Spices available stocks: $spices")
     }
-    print("What product do you want add?:")
-    var itemadded : String = readln()
-
+    var addeditem = ArrayList<String>()
+    print("Added Item: ")
+    addeditem.add("SaltyEgg")
+    addeditem.add("Yogurt")
+    for(value in addeditem){
+        print(" $value ")
+        }
 }
