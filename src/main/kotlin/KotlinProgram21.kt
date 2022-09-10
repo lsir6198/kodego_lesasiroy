@@ -4,11 +4,19 @@ fun main(){
     var myObject = MyClass("Hello World")
 
     var myObject1 = MyClass("Hi World!")
+
+    var myGenericObject = MyGenericClass("1234567")
+}
+//Generics
+class MyGenericClass<T>(value:T){
+      init {
+          println(value.toString().length)
+      }
 }
 class MyClass(value: String){
-    init{
-        println(value)
-    }
+        init{
+            println(value.length)
+        }
 }
 /*
 Class -> used to create object
