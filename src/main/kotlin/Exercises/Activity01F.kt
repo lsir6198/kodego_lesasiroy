@@ -32,9 +32,9 @@ fun main() {
         {
             println("Word is Palindrome.")
         } else //if (word != word.reversed())
-              {
-                println("Word is not Palindrome.")
-              }
+        {
+            println("Word is not Palindrome.")
+        }
     }
 }
 
