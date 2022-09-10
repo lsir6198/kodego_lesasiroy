@@ -18,8 +18,13 @@ fun main (){
     var setA = setOf(name.get(3))
     var setB = setOf(occupation.get(2))
 
+    print("Unique Letters: ")
     println(setA.union(setB))
+
+    print("Intersecting letters: ")
     println(setA.intersect(setB))
+
+    print("Difference: ")
     println(setA.minus(setB))
 
 }
