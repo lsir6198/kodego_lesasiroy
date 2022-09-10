@@ -22,7 +22,7 @@ fun main() {
     answer = readln()
 
     if (answer == "Yes")
-        {
+    {
         print("Checking: $word ")
         print("If reversed : ")
         println(word.reversed())
