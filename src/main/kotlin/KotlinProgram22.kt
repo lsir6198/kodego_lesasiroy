@@ -1,6 +1,7 @@
 fun main(){
     displayName()
     displayMessage("Hello!")
+    displayNameAndAge("John", 18)
 
   //  println("Enter number 1:")
   //  var number : Int = readln().toInt()
@@ -18,7 +19,11 @@ fun displayMessage(msg: String) {
     println("The message is $msg")
 
     }
-
+//not return with 2 parameters
+fun displayNameAndAge(name: String, age: Int){
+    println("Your name is $name")
+    println("Your Age is $age")
+}
 //built-in functions/standard functions in kotlin
 //abstraction
 
