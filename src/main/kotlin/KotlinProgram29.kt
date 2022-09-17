@@ -1,4 +1,7 @@
 fun main(){
+    val name : String = "Jack"
+    var age : Int = 12
+/*
     var john = Person()
     var joe = Person()
     println("John's memory address is $john")
@@ -10,6 +13,7 @@ fun main(){
     println(john.name)
 
     println(joe.name)
+*/
 }
 
 class Empty {}
