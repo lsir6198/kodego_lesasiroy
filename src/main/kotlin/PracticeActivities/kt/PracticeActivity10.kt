@@ -54,7 +54,7 @@ class SmartPhone {
 
     init {
         println("Smart Phone System")
-        println("Remaining Balance: $loadbalance")
+
     }
 
     fun ReturnLoad() {//does not accept 0 or negative values
