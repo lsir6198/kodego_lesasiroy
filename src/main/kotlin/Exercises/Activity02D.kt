@@ -22,7 +22,7 @@ fun main(){
 class Activity02D{
 
     var amount1: Double = 0.00
-    var amount4: Double = 0.00
+    var sum: Double = 0.00
 
     init {
         print("Enter Amount:")
@@ -35,7 +35,7 @@ class Activity02D{
         var amount2: Double = readln().toDouble()
         var amount3 = amount1 + amount2
         println("Total amount is : $amount3")
-        amount4 = amount3
+        sum = amount3
 
     }
 
@@ -43,7 +43,7 @@ class Activity02D{
         print("Divided the value by how many?")
         var valueamount: Int = readln().toInt()
         print("Divided Total Amount is ")
-        println(amount4 / valueamount)
+        println(sum / valueamount)
     }
 
 }
