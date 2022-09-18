@@ -1,0 +1,49 @@
+package Exercises
+//Implement Activity 02 - A using Classes.
+//Create an application that will accept monetary amounts. The application will continue to accept values until a “No” is set as input.
+fun main(){
+    var answer: String = "Yes"
+    var monetaryamounts = Activity02D()
+
+
+    do {
+        println("Do you want to add another amount?")
+        answer = readln()
+
+        if (answer == "Yes"){
+            monetaryamounts.Sum()
+        }
+
+    }while (answer == "Yes")
+
+    monetaryamounts.Dividedamount()
+}
+
+class Activity02D{
+
+    var amount1: Double = 0.00
+    var amount4: Double = 0.00
+
+    init {
+        print("Enter Amount:")
+        var amount : Double = readln().toDouble()
+        amount1 = amount
+        println("Amount is $amount")
+    }
+    fun Sum(){
+        print("Enter another Amount:")
+        var amount2: Double = readln().toDouble()
+        var amount3 = amount1 + amount2
+        println("Total amount is : $amount3")
+        amount4 = amount3
+        return Sum()
+    }
+
+    fun Dividedamount(){
+        print("Divided the value by how many?")
+        var valueamount: Int = readln().toInt()
+        print("Divided Total Amount is ")
+        println(amount4 / valueamount)
+    }
+
+}
