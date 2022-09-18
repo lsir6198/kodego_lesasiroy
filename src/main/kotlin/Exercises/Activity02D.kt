@@ -36,7 +36,7 @@ class Activity02D{
         var amount3 = amount1 + amount2
         println("Total amount is : $amount3")
         amount4 = amount3
-        return Sum()
+
     }
 
     fun Dividedamount(){
