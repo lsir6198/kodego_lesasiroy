@@ -8,13 +8,13 @@ fun main(){
 
     do {
         println("Do you want to add another amount?")
-        answer = readln()
+        answer = readln().lowercase()
 
-        if (answer == "Yes"){
+        if (answer == "yes"){
             monetaryamounts.Sum()
         }
 
-    }while (answer == "Yes")
+    }while (answer == "yes")
 
     monetaryamounts.Dividedamount()
 }
