@@ -35,8 +35,9 @@ class Activity02D{
         print("Enter another Amount:")
         var amount2: Double = readln().toDouble()
 
-        sum = amount1 + amount2
-        println("Total amount is : $sum")
+        amount1 = amount1 + amount2
+        sum = amount1
+        println("Total amount is : $amount1")
     }
     fun Dividedamount(){
         print("Divided the value by how many?")
