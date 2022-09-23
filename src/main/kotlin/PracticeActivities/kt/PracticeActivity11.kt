@@ -1,44 +1,57 @@
+import java.lang.Exception
+
 fun main(){
-    var productSales = saleDiscount("Refrigerator", 45000)
-    productSales.productName()
-    productSales.discount()
+
+        println("Enter Product Name:")
+        var product: String = readln().lowercase()
+
+    try {
+        println("Enter Price:")
+        var price: Int = readln().toInt()
+        var productSales = SaleDiscount(product, price)
+        productSales.discount()
+    }catch (e:Exception){
+        println(e)
+        println("Inputs digits only")
+    }
+
+    println("Thank You for Shopping!")
 }
-class saleDiscount(var product: String, var price: Int){
+class SaleDiscount(var product: String, var price: Int){
 
     init {
         println("***Promo Discount on Selected Items***")
     }
-    fun discount(){
-        println("Enter Price:")
-        this.price = readln().toInt()
+    fun discount():Double{
         println("Price of ${this.product} is ${this.price}")
         if ((this.price >= 0) && (this.price <= 10000)) {
-            var NetPrice1: Int = (this.price)
             println("0% Discount")
+            return 0.0
         } else if ((this.price >= 10001) && (this.price <= 20000)) {
-            var Discount2: Double = ((this.price) * (0.05))
-            var NetPrice2: Double = ((this.price) - (Discount2))
-            println("Discount is $Discount2")
-            println("Net Price is $NetPrice2")
+            var discount2: Double = ((this.price) * (0.05))
+            var netPrice2: Double = ((this.price) - (discount2))
+            println("Discount is $discount2")
+            println("Net Price is $netPrice2")
+            return discount2
         } else if ((this.price >= 20001) && (this.price <= 50000)) {
-            var Discount3: Double = ((this.price) * (0.10))
-            var NetPrice3: Double = ((this.price) - (Discount3))
-            println("Discount is $Discount3")
-            println("Net Price is $NetPrice3")
+            var discount3: Double = ((this.price) * (0.10))
+            var netPrice3: Double = ((this.price) - (discount3))
+            println("Discount is $discount3")
+            println("Net Price is $netPrice3")
+            return discount3
         } else if ((this.price >= 50001) && (this.price <= 100000)) {
-            var Discount4: Double = ((this.price) * (0.15))
-            var NetPrice4: Double = ((this.price) - (Discount4))
-            println("Discount is $Discount4")
-            println("Net Price is $NetPrice4")
+            var discount4: Double = ((this.price) * (0.15))
+            var netPrice4: Double = ((this.price) - (discount4))
+            println("Discount is $discount4")
+            println("Net Price is $netPrice4")
+            return discount4
         } else if (this.price > 100000) {
-            var Discount5: Double = ((this.price) * (0.20))
-            var NetPrice5: Double = ((this.price) - (Discount5))
-            println("Discount is $Discount5")
-            println("Net Price is $NetPrice5")
+            var discount5: Double = ((this.price) * (0.20))
+            var netPrice5: Double = ((this.price) - (discount5))
+            println("Discount is $discount5")
+            println("Net Price is $netPrice5")
+            return discount5
         }
-    }
-    fun productName(){
-        println("Enter Product Name:")
-        this.product = readln().lowercase()
+        return 0.0
     }
 }
