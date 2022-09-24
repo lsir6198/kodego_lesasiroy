@@ -31,4 +31,8 @@ open class Person {
     fun change(age:Int){
         println(age)
     }
+
+    open fun displayName(){
+        println("Name is $name")
+    }
 }
