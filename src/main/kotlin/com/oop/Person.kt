@@ -3,7 +3,7 @@ package com.oop
 //Abstraction = abstract/hidden
 //encapsulation = cannot directly access the variables
 
-class Person {
+open class Person {
     var name : String = "John"
         get() {return field}
         set(value) {
