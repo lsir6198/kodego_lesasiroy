@@ -2,24 +2,23 @@ package Exercises
 //Implement Activity 02 - A using Classes.
 //Create an application that will accept monetary amounts. The application will continue to accept values until a “No” is set as input.
 fun main(){
-    var answer: String = "Yes"
-    var monetaryamounts = Activity02D()
 
+    var monetaryamounts = MonetaryValue()
 
     do {
         println("Do you want to add another amount?")
-        answer = readln().lowercase()
+        var answer = readln().lowercase()
 
         if (answer == "yes"){
-            monetaryamounts.Sum()
+            monetaryamounts.sum()
         }
 
     }while (answer == "yes")
 
-    monetaryamounts.Dividedamount()
+    monetaryamounts.dividedamount()
 }
 
-class Activity02D{
+class MonetaryValue{
 
     var amount1: Double = 0.00
     var sum: Double = 0.00
@@ -31,7 +30,7 @@ class Activity02D{
         amount1 = amount
         println("Amount is $amount")
     }
-    fun Sum(){
+    fun sum(){
         print("Enter another Amount:")
         var amount2: Double = readln().toDouble()
 
@@ -39,7 +38,7 @@ class Activity02D{
         sum = amount1
         println("Total amount is : $amount1")
     }
-    fun Dividedamount(){
+    fun dividedamount(){
         print("Divided the value by how many?")
         var valueamount: Int = readln().toInt()
 
