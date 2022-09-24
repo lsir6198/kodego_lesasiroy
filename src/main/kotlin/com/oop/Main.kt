@@ -8,7 +8,7 @@ fun main(){
     joePerson.age = -1
     var ageFromPerson = joePerson.upAge()
 */
-    var joeStudent = Student()
+    var joeStudent = Student(6199)
     println(joeStudent.name)
     joeStudent.age = -1
     println("Hello World!")
