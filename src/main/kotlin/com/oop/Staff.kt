@@ -1,4 +1,7 @@
 package com.oop
 
-class Staff {
+class Staff: Employee() {
+
+
+
 }
