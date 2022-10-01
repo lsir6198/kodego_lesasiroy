@@ -24,27 +24,21 @@ fun main () {
          print("Enter your Occupation:")
          var occupation = readln().lowercase()
 
-        try{
-            if (occupation.isEmpty()){
+        try {
+            if (occupation.isEmpty()) {
                 throw Exception()
             }
             println("Occupation is $occupation")
 
-        }catch (e:Exception){
-            println(e)
-            println("Not a valid input")
-        }
-
-
             var setA = mutableSetOf<Char>()
             var setB = mutableSetOf<Char>()
 
-            for (char in name){
+            for (char in name) {
                 setA.add(char)
             }
             println("The unique letters in set A is ${setA.minus((setB))}")
 
-            for (char in occupation){
+            for (char in occupation) {
                 setB.add(char)
             }
             println("The unique letters in set B is ${setB.minus(setA)}")
@@ -53,5 +47,9 @@ fun main () {
             print("Intersecting letters: ")
             println(setA.intersect(setB))
 
+        }catch (e:Exception){
+            println(e)
+            println("Not a valid input")
+        }
 }
 
