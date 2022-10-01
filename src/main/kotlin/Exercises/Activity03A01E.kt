@@ -9,7 +9,6 @@ fun main () {
 
          print("Enter your Name:")
          var name = readln().lowercase()
-         /*name.checkIntOrString()*/
 
          try{
              if (name.isEmpty()){
@@ -28,25 +27,30 @@ fun main () {
         try{
             if (occupation.isEmpty()){
                 throw Exception()
-        }
+            }
             println("Occupation is $occupation")
+
+        }catch (e:Exception){
+            println(e)
+            println("Not a valid input")
+        }
+
+        try {
+            var setA = setOf(name.get(2))
+            var setB = setOf(occupation.get(1))
+
+            print("Unique Letters: ")
+            println(setA.union(setB))
+            print("Intersecting letters: ")
+            println(setA.intersect(setB))
+            print("Difference: ")
+            println(setA.minus(setB))
 
         }catch (e:StringIndexOutOfBoundsException){
             println(e)
-            println("Please enter a valid input")
+            println("NO INPUT!!!")
         }
 
-
-         var setA = setOf(name.get(2))
-         var setB = setOf(occupation.get(1))
-
-
-         print("Unique Letters: ")
-         println(setA.union(setB))
-         print("Intersecting letters: ")
-         println(setA.intersect(setB))
-         print("Difference: ")
-         println(setA.minus(setB))
 
 
 }
