@@ -11,24 +11,30 @@ fun main () {
          var name = readln().lowercase()
          /*name.checkIntOrString()*/
 
-         try{ name }catch (e:Exception){
-                 println(e)
-                 println("Invalid input")
+         try{
+             if (name.isEmpty()){
+                 throw Exception()
+             }
+             println("Name is $name")
+
+         }catch (e:Exception){
+             println("Please enter a valid input")
          }
 
-         println(name)
 
          print("Enter your Occupation:")
          var occupation = readln().lowercase()
-         /*occupation.checkIntOrString()*/
 
-         try { occupation } catch (e: Exception) {
-                println(e)
-                println("Invalid input")
-         }
+        try{
+            if (occupation.isEmpty()){
+                throw Exception()
+        }
+            println("Occupation is $occupation")
 
-
-         println(occupation)
+        }catch (e:StringIndexOutOfBoundsException){
+            println(e)
+            println("Please enter a valid input")
+        }
 
 
          var setA = setOf(name.get(2))
@@ -44,23 +50,4 @@ fun main () {
 
 
 }
-
-/*
-fun String.checkIntOrString(): Any {
-    try {
-        var v = toString()
-        return when(v){
-            v -> String
-            else -> Int
-        }
-
-    }catch (e:Exception){
-        println(e)
-        println("Invalid Input")
-
-    }
-    return checkIntOrString()
-
-}
-*/
 
