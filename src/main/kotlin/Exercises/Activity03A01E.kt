@@ -35,23 +35,23 @@ fun main () {
             println("Not a valid input")
         }
 
-        try {
-            var setA = setOf(name.get(2))
-            var setB = setOf(occupation.get(1))
 
-            print("Unique Letters: ")
+            var setA = mutableSetOf<Char>()
+            var setB = mutableSetOf<Char>()
+
+            for (char in name){
+                setA.add(char)
+            }
+            println("The unique letters in set A is ${setA.minus((setB))}")
+
+            for (char in occupation){
+                setB.add(char)
+            }
+            println("The unique letters in set B is ${setB.minus(setA)}")
+
             println(setA.union(setB))
             print("Intersecting letters: ")
             println(setA.intersect(setB))
-            print("Difference: ")
-            println(setA.minus(setB))
-
-        }catch (e:StringIndexOutOfBoundsException){
-            println(e)
-            println("NO INPUT!!!")
-        }
-
-
 
 }
 
