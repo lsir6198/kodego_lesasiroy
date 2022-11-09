@@ -8,10 +8,10 @@ package kodego_ph_assignments_siroy
 
 
 fun main(){
-    var name1 = "Lesa Siroy"
-    var name2 = "Marc Quinn"
-    var name3 = "Lyan Keem"
-    var name4 = "Ryan Neil"
+    var name1: String = "Lesa Siroy"
+    var name2: String = "Marc Quinn"
+    var name3: String = "Lyan Keem"
+    var name4: String = "Ryan Neil"
     var grade1 :Int = 74
     var grade2 :Int = 95
     var grade3 :Int = 93
@@ -87,17 +87,20 @@ fun main(){
         var answer = readln().lowercase()
         if (answer == "yes") {
             print("Select a Student: ")
-            var studentname = readln().lowercase()
+            var studentname:String = readln().uppercase()
+
 
             if (studentname == name1) {
                 print("Add a grade: ")
                 var grade: Int = readln().toInt()
                 println("First Grading: $grade1, Second Grading: $grade")
+
             }
             else if (studentname == name2){
                 print("Add a grade")
                 var grade1: Int = readln().toInt()
                 println("First Grading: $grade2, Second Grading: $grade1")
+
             }
             else if (studentname == name3){
                 print("Add a grade")
